@@ -26,10 +26,6 @@
             "{",
             "}"
         ],
-        [
-            "<",
-            ">"
-        ],
     ],
     //// diffEditor ////
     "diffEditor.ignoreTrimWhitespace": false,
@@ -102,11 +98,12 @@
         ".vscode",
     ],
     //// CPP ////
-    "C_Cpp.default.intelliSenseMode": "linux-gcc-x86",
-    "C_Cpp.formatting": "disabled",
-    "C_Cpp.clang_format_path": "${workspaceFolder}/.vscode/clang-format",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "C_Cpp.clang_format_style": "file:${workspaceFolder}/.vscode/.clang-format",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": true,
     },
     //// Python ////
     // Autocomplete from ros python packages
