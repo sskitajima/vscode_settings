@@ -42,9 +42,6 @@
         "*.repos": "yaml",
         "*.world": "xml",
         "*.xacro": "xml",
-        "ostream": "cpp",
-        "limits": "cpp",
-        "map": "cpp"
     },
     //// workbench ////
     // "workbench.editor.enablePreview": false,
@@ -107,6 +104,7 @@
     //// CPP ////
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x86",
     "C_Cpp.formatting": "disabled",
+    "C_Cpp.clang_format_path": "${workspaceFolder}/.vscode/clang-format",
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
@@ -144,4 +142,6 @@
     //// Vim ////
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
+    //// CMake ////
+    "cmake.configureOnOpen": false,
 }
