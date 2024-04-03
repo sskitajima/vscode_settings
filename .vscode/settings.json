@@ -138,9 +138,27 @@
     "svn.path": "C:\\Program Files\\TortoiseSVN\\bin\\",
     //// markdown ////
     "markdown-preview-enhanced.plantumlServer": "",
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off"
+    },
     //// Vim ////
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        },
+        {
+            "before": ["<C-r>"],
+            "commands": ["redo"]
+        }
+    ],
     //// CMake ////
     "cmake.configureOnOpen": false,
 }
