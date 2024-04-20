@@ -32,6 +32,12 @@
 			"#include <vector>"
 		]
 	},
+	"include bits/stdc++": {
+		"prefix": "#include <bits/stdc++>",
+		"body": [
+			"#include <bits/stdc++>"
+		]
+	},
 	"std_namespace": {
 		"prefix": "using std",
 		"body": [
