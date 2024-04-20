@@ -39,6 +39,8 @@
         "*.world": "xml",
         "*.xacro": "xml",
     },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     //// workbench ////
     // "workbench.editor.enablePreview": false,
     "workbench.preferredLightColorTheme": "Visual Studio 2017 Light - C++",
