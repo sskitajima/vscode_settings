@@ -35,7 +35,7 @@
 	"include bits/stdc++": {
 		"prefix": "#include <bits/stdc++>",
 		"body": [
-			"#include <bits/stdc++>"
+			"#include <bits/stdc++.h>"
 		]
 	},
 	"std_namespace": {
