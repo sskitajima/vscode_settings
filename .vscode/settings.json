@@ -7,6 +7,7 @@
     "editor.unicodeHighlight.ambiguousCharacters": true,
     "editor.tabSize": 2,
     "editor.rulers": [
+        80,
         100
     ],
     "editor.bracketPairColorization.enabled": true,
@@ -44,30 +45,6 @@
     //// workbench ////
     // "workbench.editor.enablePreview": false,
     "workbench.preferredLightColorTheme": "Visual Studio 2017 Light - C++",
-    //// Terminal ////
-    "terminal.integrated.defaultProfile.windows": "Anaconda Prompt",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "Anaconda Prompt": {
-            "path": "C:\\Windows\\System32\\cmd.exe"
-        }
-    },
-    //// Others ////
-    "update.showReleaseNotes": false,
     /////////////////////////////////////// Extention settings
     ////// Code Spell Checker ////
     "cSpell.words": [
@@ -128,13 +105,22 @@
     "python.condaPath": "C:\\Users\\s-kitajima\\AppData\\Local\\anaconda3\\Scripts",
     "python.defaultInterpreterPath": "C:\\Users\\s-kitajima\\AppData\\Local\\Programs\\Python\\Python39",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
-        "editor.formatOnType": true
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
     },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "flake8.args": [
+        "--max-line-length=80",
+        "--max-complexity=10",
+    ],
     //// Uncrustify ////
     "uncrustify.configPath.linux": "/opt/ros/humble/lib/python3.10/site-packages/ament_uncrustify/configuration/ament_code_style.cfg",
     //// Git ////
     "git.openRepositoryInParentFolders": "never",
+    "git.autofetch": true,
     "gitlens.views.searchAndCompare.avatars": false,
     //// SVN settings ////
     "svn.path": "C:\\Program Files\\TortoiseSVN\\bin\\",
@@ -154,14 +140,52 @@
     "vim.hlsearch": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["u"],
-            "commands": ["undo"]
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
         },
         {
-            "before": ["<C-r>"],
-            "commands": ["redo"]
-        }
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                "redo"
+            ]
+        },
     ],
+    //// Terminal ////
+    "terminal.integrated.defaultProfile.windows": "Anaconda Prompt",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Anaconda Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [
+                "-ExecutionPolicy",
+                "ByPass",
+                "-NoExit",
+                "-Command",
+                "& 'C:\\Users\\s-kitajima\\AppData\\Local\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\s-kitajima\\AppData\\Local\\anaconda3' "
+            ],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Command Prompt": {
+            "path": "C:\\Windows\\System32\\cmd.exe"
+        }
+    },
     //// CMake ////
     "cmake.configureOnOpen": false,
+    //// Others ////
+    "update.showReleaseNotes": false,
 }
