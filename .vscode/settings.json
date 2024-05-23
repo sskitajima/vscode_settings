@@ -143,7 +143,8 @@
     "[markdown]": {
         "editor.formatOnSave": true,
         "editor.renderWhitespace": "all",
-        "editor.acceptSuggestionOnEnter": "off"
+        "editor.acceptSuggestionOnEnter": "off",
+        "files.trimTrailingWhitespace": false
     },
     //// Vim ////
     "vim.useCtrlKeys": false,
