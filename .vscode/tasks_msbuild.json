@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build DEBUG ALL_BUILD",
+      "type": "shell",
+      "command": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe",
+      "args": [
+        "E:/ebrad_dev/build_model_inference_logger/ALL_BUILD.vcxproj",
+        "/p:Configuration=Debug",
+        "/p:Platform=x64"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Build DEBUG INSTALL",
+      "type": "shell",
+      "command": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe",
+      "args": [
+        "E:/ebrad_dev/build_model_inference_logger/INSTALL.vcxproj",
+        "/p:Configuration=Debug",
+        "/p:Platform=x64"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Build RELEASE ALL_BUILD",
+      "type": "shell",
+      "command": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe",
+      "args": [
+        "E:/ebrad_dev/build_model_inference_logger/ALL_BUILD.vcxproj",
+        "/p:Configuration=Release",
+        "/p:Platform=x64"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Build RELEASE INSTALL",
+      "type": "shell",
+      "command": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe",
+      "args": [
+        "E:/ebrad_dev/build_model_inference_logger/INSTALL.vcxproj",
+        "/t:INSTALL",
+        "/p:Configuration=Release",
+        "/p:Platform=x64"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
