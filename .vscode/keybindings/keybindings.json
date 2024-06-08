@@ -1,56 +1,54 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
-  // Suggestionをnとpで行う
-  {
-      "key": "ctrl+n",
-      "command": "-workbench.action.files.newUntitledFile"
-  },
-  {
-      "key": "ctrl+n",
-      "command": "selectNextSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-      "key": "ctrl+down",
-      "command": "-selectNextSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-      "key": "down",
-      "command": "-selectNextSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-      "key": "ctrl+p",
-      "command": "selectPrevSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-      "key": "ctrl+up",
-      "command": "-selectPrevSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-      "key": "up",
-      "command": "-selectPrevSuggestion",
-      "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-
-  // パネルの最大化
-  {
-      "key": "ctrl+alt+m",
-      "command": "workbench.action.toggleMaximizedPanel"
-  },
-
-  // タブ切り替え
-  {
-      "key": "ctrl+h",
-      "command": "workbench.action.previousEditor",
-      "when": "editorFocus && vim.mode == 'Normal'"
-  },
-  {
-      "key": "ctrl+l",
-      "command": "workbench.action.nextEditor",
-      "when": "editorFocus && vim.mode == 'Normal'"
-  },
+    // Suggestionをnとpで行う
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "up",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // パネルの最大化
+    {
+        "key": "ctrl+alt+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    // タブ切り替え
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
 ]
