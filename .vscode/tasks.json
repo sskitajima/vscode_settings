@@ -8,6 +8,12 @@
         "-std=c++20",
         "-fdiagnostics-color=always",
         "-g",
+        "-Wall",
+        "-Wextra",
+        "-pedantic", // print warnings when non-ISO standard C++ is used
+        "-Wconversion",
+        "-Wshadow",
+        "-Wfloat-equal",
         "${file}",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
