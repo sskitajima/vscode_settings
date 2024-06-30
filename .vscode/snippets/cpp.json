@@ -71,5 +71,19 @@
 			"const double ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();",
 		],
 		"description": "Print the code to measure the duration time in milliseconds"
+	},
+	"atcoder snippet": {
+		"prefix": "atcoder",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"using LL=long long;",
+			"int main() {",
+			"  int N;",
+			"  return 0;",
+			"}",
+			""
+		],
+		"description": "Template code for AtCoder contest"
 	}
 }
