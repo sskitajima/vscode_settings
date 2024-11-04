@@ -87,7 +87,7 @@
     //// tex ////
     "[tex]": {},
     "[latex]": {},
-    "[bibtex]": {}
+    "[bibtex]": {},
     /////////////////////////////////////// Extention settings
     //// remote SSH ////
     "remote.SSH.remotePlatform": {
