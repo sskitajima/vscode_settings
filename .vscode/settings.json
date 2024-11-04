@@ -163,6 +163,17 @@
             ]
         },
     ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
     //// Terminal ////
     "terminal.integrated.defaultProfile.windows": "Anaconda Prompt",
     "terminal.integrated.profiles.windows": {
