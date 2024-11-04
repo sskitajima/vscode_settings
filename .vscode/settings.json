@@ -30,10 +30,6 @@
     ],
     //// diffEditor ////
     "diffEditor.ignoreTrimWhitespace": false,
-    //// remote SSH ////
-    "remote.SSH.remotePlatform": {
-        "192.168.xxx.xxx": "linux",
-    },
     //// Files ////
     "files.associations": {
         "*.repos": "yaml",
@@ -45,37 +41,9 @@
     //// workbench ////
     // "workbench.editor.enablePreview": false,
     "workbench.preferredLightColorTheme": "Visual Studio 2017 Light - C++",
-    /////////////////////////////////////// Extention settings
-    ////// Code Spell Checker ////
-    "cSpell.words": [
-        "RTPS",
-        "athackst",
-        "autopep",
-        "cmake",
-        "cppcheck",
-        "cpplint",
-        "DCMAKE",
-        "deque",
-        "devcontainer",
-        "ints",
-        "noqa",
-        "pytest",
-        "rclcpp",
-        "rclpy",
-        "repos",
-        "rosdep",
-        "rosdistro",
-        "rosidl",
-        "RTPS",
-        "uncrustify",
-        "Wextra",
-        "Wpedantic",
-        "xmllint"
-    ],
-    "cSpell.allowCompoundWords": true,
-    "cSpell.ignorePaths": [
-        ".vscode",
-    ],
+    //// VSCode ////
+    "update.showReleaseNotes": false,
+    /////////////////////////////////////// Language settings
     //// CPP ////
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
     "C_Cpp.clang_format_style": "file:${workspaceFolder}/.vscode/.clang-format",
@@ -115,6 +83,45 @@
     "flake8.args": [
         "--max-line-length=80",
         "--max-complexity=10",
+    ],
+    //// tex ////
+    "[tex]": {},
+    "[latex]": {},
+    "[bibtex]": {}
+    /////////////////////////////////////// Extention settings
+    //// remote SSH ////
+    "remote.SSH.remotePlatform": {
+        "192.168.xxx.xxx": "linux",
+    },
+    ////// Code Spell Checker ////
+    "cSpell.words": [
+        "RTPS",
+        "athackst",
+        "autopep",
+        "cmake",
+        "cppcheck",
+        "cpplint",
+        "DCMAKE",
+        "deque",
+        "devcontainer",
+        "ints",
+        "noqa",
+        "pytest",
+        "rclcpp",
+        "rclpy",
+        "repos",
+        "rosdep",
+        "rosdistro",
+        "rosidl",
+        "RTPS",
+        "uncrustify",
+        "Wextra",
+        "Wpedantic",
+        "xmllint"
+    ],
+    "cSpell.allowCompoundWords": true,
+    "cSpell.ignorePaths": [
+        ".vscode",
     ],
     //// Uncrustify ////
     "uncrustify.configPath.linux": "/opt/ros/humble/lib/python3.10/site-packages/ament_uncrustify/configuration/ament_code_style.cfg",
@@ -186,6 +193,51 @@
     },
     //// CMake ////
     "cmake.configureOnOpen": false,
-    //// Others ////
-    "update.showReleaseNotes": false,
+    //// LaTex workshop ////
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.dvi",
+        "*.synctex.gz"
+    ],
+    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-silent",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+        },
+    ],
 }
