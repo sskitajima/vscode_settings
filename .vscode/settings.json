@@ -103,6 +103,7 @@
         "--max-line-length=100"
     ],
     "python.condaPath": "C:\\Users\\s-kitajima\\AppData\\Local\\anaconda3\\Scripts",
+    "python.locator": "js",
     "python.defaultInterpreterPath": "C:\\Users\\s-kitajima\\AppData\\Local\\Programs\\Python\\Python39",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
