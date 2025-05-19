@@ -1,5 +1,3 @@
-# reference: https://qiita.com/kent-u/items/0f6de3f7526a1ec7eb7e
-
 asciidoctor.asciidoctor-vscode
 bierner.markdown-mermaid
 bierner.markdown-preview-github-styles
