@@ -30,10 +30,6 @@
     ],
     //// diffEditor ////
     "diffEditor.ignoreTrimWhitespace": false,
-    //// remote SSH ////
-    "remote.SSH.remotePlatform": {
-        "192.168.xxx.xxx": "linux",
-    },
     //// Files ////
     "files.associations": {
         "*.repos": "yaml",
@@ -42,40 +38,18 @@
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "/.git/objects/": true,
+        "/.git/subtree-cache/": true,
+        "/.svn/": true,
+        "/node_modules/": true,
+        "/.next/": true,
+        "/.cache/": true
+    },
     //// workbench ////
     // "workbench.editor.enablePreview": false,
-    "workbench.preferredLightColorTheme": "Visual Studio 2017 Light - C++",
-    /////////////////////////////////////// Extention settings
-    ////// Code Spell Checker ////
-    "cSpell.words": [
-        "RTPS",
-        "athackst",
-        "autopep",
-        "cmake",
-        "cppcheck",
-        "cpplint",
-        "DCMAKE",
-        "deque",
-        "devcontainer",
-        "ints",
-        "noqa",
-        "pytest",
-        "rclcpp",
-        "rclpy",
-        "repos",
-        "rosdep",
-        "rosdistro",
-        "rosidl",
-        "RTPS",
-        "uncrustify",
-        "Wextra",
-        "Wpedantic",
-        "xmllint"
-    ],
-    "cSpell.allowCompoundWords": true,
-    "cSpell.ignorePaths": [
-        ".vscode",
-    ],
+    "workbench.preferredLightColorTheme": "Default Light+",
+    /////////////////////////////////////// Language settings
     //// CPP ////
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
     "C_Cpp.clang_format_style": "file:${workspaceFolder}/.vscode/.clang-format",
@@ -103,6 +77,7 @@
         "--max-line-length=100"
     ],
     "python.condaPath": "C:\\Users\\s-kitajima\\AppData\\Local\\anaconda3\\Scripts",
+    "python.locator": "js",
     "python.defaultInterpreterPath": "C:\\Users\\s-kitajima\\AppData\\Local\\Programs\\Python\\Python39",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
@@ -116,6 +91,86 @@
         "--max-line-length=80",
         "--max-complexity=10",
     ],
+    //// Others ////
+    "update.showReleaseNotes": false,
+    /////////////////////////////////////// Extention settings
+    //// remote SSH ////
+    "remote.SSH.remotePlatform": {
+        "192.168.xxx.xxx": "linux",
+    },
+    ////// Code Spell Checker ////
+    "cSpell.userWords": [
+        "RTPS",
+        "athackst",
+        "autopep",
+        "cmake",
+        "cppcheck",
+        "cpplint",
+        "DCMAKE",
+        "deque",
+        "devcontainer",
+        "ints",
+        "noqa",
+        "pytest",
+        "rclcpp",
+        "rclpy",
+        "repos",
+        "rosdep",
+        "rosdistro",
+        "rosidl",
+        "RTPS",
+        "uncrustify",
+        "Wextra",
+        "Wpedantic",
+        "xmllint"
+    ],
+    "cSpell.enabledFileTypes": {
+        "asciidoc": true,
+        "c": true,
+        "cpp": true,
+        "csharp": true,
+        "css": true,
+        "elixir": true,
+        "erlang": true,
+        "git-commit": true,
+        "go": true,
+        "graphql": true,
+        "handlebars": true,
+        "haskell": true,
+        "html": true,
+        "jade": true,
+        "java": true,
+        "javascript": true,
+        "javascriptreact": true,
+        "json": true,
+        "jsonc": true,
+        "jupyter": true,
+        "latex": true,
+        "less": true,
+        "markdown": true,
+        "php": true,
+        "plaintext": true,
+        "python": true,
+        "pug": true,
+        "restructuredtext": true,
+        "rust": true,
+        "scala": true,
+        "scss": true,
+        "scminput": true,
+        "swift": true,
+        "text": true,
+        "typescript": true,
+        "typescriptreact": true,
+        "vue": true,
+        "yaml": true,
+        "yml": true,
+        "pu": true
+    },
+    "cSpell.allowCompoundWords": true,
+    "cSpell.ignorePaths": [
+        ".vscode",
+    ],
+    "cSpell.checkOnlyEnabledFileTypes": true,
     //// Uncrustify ////
     "uncrustify.configPath.linux": "/opt/ros/humble/lib/python3.10/site-packages/ament_uncrustify/configuration/ament_code_style.cfg",
     //// Git ////
@@ -134,10 +189,10 @@
     },
     //// Vim ////
     "vim.useCtrlKeys": false,
+    "vim.hlsearch": true,
     "vim.useSystemClipboard": true,
     "vim.easymotion": true,
     "vim.incsearch": true,
-    "vim.hlsearch": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -196,7 +251,56 @@
         }
     },
     //// CMake ////
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.buildDirectory": "${workspaceFolder}/../build",
+    "cmake.configureOnEdit": false,
+    "cmake.automaticReconfigure": false,
     "cmake.configureOnOpen": false,
-    //// Others ////
-    "update.showReleaseNotes": false,
+    //// LaTex workshop ////
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.dvi",
+        "*.synctex.gz"
+    ],
+    "latex-workshop.latex.outDir": "out",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-silent",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+        },
+    ],
 }

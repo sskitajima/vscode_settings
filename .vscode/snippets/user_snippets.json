@@ -1,0 +1,76 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "copyright": {
+    "scope": "cpp,python",
+    "prefix": "copyright",
+    "body": [
+      "Copyright (C) 2022 eSOL Co.,Ltd. All rights reserved."
+    ],
+    "description": "copyright description"
+  },
+  "bsd_license": {
+    "scope": "cpp",
+    "prefix": "bsd",
+    "body": [
+      "To be implemented"
+    ],
+    "description": "BSD-2-Clause license description "
+  },
+  "copyright_ebrad_cpp": {
+    "scope": "cpp",
+    "prefix": "copyright_ebrad",
+    "body": [
+      "/*",
+			"	Copyright (C) 2024 eSOL Co.,Ltd. All rights reserved.",
+      "",
+			"	This software is protected by the law and the agreement concerning",
+			"	a Japanese country copyright method, an international agreement,",
+			"	and other intellectual property right and may be used and copied",
+			"	only in accordance with the terms of such license and with the inclusion",
+			"	of the above copyright notice.",
+      "",
+			"	This software or any other copies thereof may not be provided",
+			"	or otherwise made available to any other person.  No title to",
+			"	and ownership of the software is hereby transferred.",
+      "",
+			"	The information in this software is subject to change without",
+			"	notice and should not be construed as a commitment by eSOL Co.,Ltd.",
+      "*/",
+    ]
+  },
+  "copyright_ebrad_python": {
+    "scope": "python,cmake",
+    "prefix": "copyright_ebrad",
+    "body": [
+      "# Copyright (C) 2024 eSOL Co.,Ltd. All rights reserved.",
+      "#",
+      "# This software is protected by the law and the agreement concerning",
+      "# a Japanese country copyright method, an international agreement,",
+      "# and other intellectual property right and may be used and copied",
+      "# only in accordance with the terms of such license and with the inclusion",
+      "# of the above copyright notice.",
+      "#",
+      "# This software or any other copies thereof may not be provided",
+      "# or otherwise made available to any other person.  No title to",
+      "# and ownership of the software is hereby transferred.",
+      "#",
+      "# The information in this software is subject to change without",
+      "# notice and should not be construed as a commitment by eSOL Co.,Ltd.",
+    ]
+  }
+}
