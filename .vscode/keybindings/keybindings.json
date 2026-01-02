@@ -42,12 +42,12 @@
     },
     // タブ切り替え
     {
-        "key": "ctrl+h",
+        "key": "shift+j",
         "command": "workbench.action.previousEditor",
         "when": "editorFocus && vim.mode == 'Normal'"
     },
     {
-        "key": "ctrl+l",
+        "key": "shift+k",
         "command": "workbench.action.nextEditor",
         "when": "editorFocus && vim.mode == 'Normal'"
     },
