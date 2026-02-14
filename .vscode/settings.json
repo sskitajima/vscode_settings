@@ -14,6 +14,7 @@
     "editor.guides.bracketPairs": true,
     "editor.largeFileOptimizations": false,
     "editor.formatOnSave": true,
+    "editor.editContext": true,
     "editor.language.colorizedBracketPairs": [
         [
             "[",
