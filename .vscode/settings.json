@@ -252,6 +252,26 @@
             "path": "C:\\Windows\\System32\\cmd.exe"
         }
     },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "/usr/bin/zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
     //// CMake ////
     "cmake.showOptionsMovedNotification": false,
     "cmake.buildDirectory": "${workspaceFolder}/../build",
