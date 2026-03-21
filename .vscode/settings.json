@@ -224,6 +224,12 @@
             ]
         }
     ],
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-b>": false,
+        "<C-h>": false,
+        "<C-p>": false
+    },
     //// Terminal ////
     "terminal.integrated.defaultProfile.windows": "Anaconda Prompt",
     "terminal.integrated.profiles.windows": {
