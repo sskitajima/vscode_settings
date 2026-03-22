@@ -49,8 +49,8 @@
     },
     //// workbench ////
     // "workbench.editor.enablePreview": false,
-    "workbench.preferredLightColorTheme": "Quiet Light",
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.preferredLightColorTheme": "Visual Studio 2017 Light - C++",
+    "workbench.colorTheme": "Visual Studio 2017 Light - C++",
     /////////////////////////////////////// Language settings
     //// CPP ////
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
