@@ -49,7 +49,8 @@
     },
     //// workbench ////
     // "workbench.editor.enablePreview": false,
-    "workbench.preferredLightColorTheme": "Default Light+",
+    "workbench.preferredLightColorTheme": "Quiet Light",
+    "workbench.colorTheme": "Quiet Light",
     /////////////////////////////////////// Language settings
     //// CPP ////
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
